@@ -1,0 +1,63 @@
+.flex{
+    display: flex;
+}
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color:#121212;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 5px;
+}
+.p-1{
+    padding: 10px;
+}
+/* ===== Global dark scrollbar ===== */
+
+/* Chrome, Edge, Safari (WebKit) */
+*::-webkit-scrollbar {
+  width: 12px;              /* vertical */
+  height: 12px;             /* horizontal */
+}
+*::-webkit-scrollbar-track {
+  background: #0f1115;      /* track (behind thumb) */
+}
+*::-webkit-scrollbar-thumb {
+  background: #2a2f3a;      /* thumb color */
+  border-radius: 8px;
+  border: 2px solid #0f1115;/* creates a gap effect */
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #3a4150;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;                     /* auto | thin | none */
+  scrollbar-color: #2a2f3a #0f1115;          /* thumb track */
+}
+
+/* Optional: only darken when user prefers dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;       /* improves built-in form controls */
+  }
+}

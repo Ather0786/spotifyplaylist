@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Lemonada:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --a:0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    /* background-color: black;
+    color: white; */
+}
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+.right {
+    width: 75vw;
+}
+
+.home {
+    padding: 10px;
+}
+
+.home ul li {
+    display: flex;
+    gap: 15px;
+    width: 15px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    list-style: none;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img {
+    width: 30px;
+}
+
+.library {
+    min-height: 70vh;
+    position: relative;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 10px;
+    color: grey;
+    gap: 13px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px;
+
+}
+
+.footer a {
+    color: grey;
+}
+
+.right {
+    margin: 16px 0px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f1f1f
+}
+
+.header * {
+    padding: 10px;
+}
+
+.spotifyPlaylists {
+    padding: 16px;
+}
+
+.cardContainer {
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 60vh;
+    overflow: scroll;
+}
+
+.card {
+    width: 190px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #5e5c5c7a;
+    position: relative;
+    transition: all 0.9s;
+}
+
+.card>* {
+    padding-top: 3px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.play {
+    position: absolute;
+    top: 138px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
+.card:hover{
+    background-color: black;
+    cursor: pointer;
+    --a : 1;
+}
+
+.signupbtn {
+    font-weight: bold;
+    background-color: #1f1f1f;
+    color:black;
+    font-size: 16px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.loginbtn{
+    font-weight: bold;
+    background-color:white;
+    color:black;
+    font-size: 16px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.signupbtn:hover {
+    font-size: 17px;
+    color: white;
+}
+.loginbtn:hover{
+    font-size: 17px;
+}
+.playbar{
+    position: absolute;
+    bottom: 5px;
+    background-color: aqua;
+    width: 95%;
+    height: 40px;
+    padding: 12px;
+    border-radius: 30px;
+}
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.songLists{
+    max-height: 300px;
+    overflow: scroll;
+}
+.songLists ul{
+    padding: 0 7px;
+    width: 90%;
+}
+.songLists ul li{
+    list-style-type: decimal;
+    width: 90%;
+    display:grid ;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 5px 0px;
+    border: 1px solid white;
+    margin: 12px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.info {
+    font-size:13px ;
+    overflow:center;
+}
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playnow span{
+    font-size: 13px;
+    width: 60px;
+    padding: 12px;
+}
+.seekbar{
+    height: 5px;
+    width: 96.5%;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: black;
+    position: absolute;
+    bottom: 4px;
+    cursor: pointer;
+}
+.circle{
+    position:relative;
+    bottom: 5px;
+    left: 0%;
+    width: 12px;
+    height: 12px;
+    background-color:white;
+    border-radius: 13px;
+    transition: left 0.5s;
+}
+.songbuttons img{
+    cursor: pointer;
+    width: 25px;
+}
+.songinfo,.songtime{
+    padding: 0 12px;
+}
+.abovebar{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 0.5fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+.volume{
+    display: flex;
+}
